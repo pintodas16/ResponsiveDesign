@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinto portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7b3f46bee7.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'main-red': "#be3144",
+                        "main-blue": "#45567d",
+                        "main-gray": "#303841"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <nav id='navbar' class="bg-main-red fixed w-full">
+        <!-- container  -->
+        <div class="container mx-auto">
+            <!-- flex contianer  -->
+            <div class="flex items-center justify-end text-white">
+                <a href="#welcome-section" class="  p-6 text-xl capitalize  hover:bg-main-gray">about</a>
+                <a href="#work" class=" p-6 py-6 text-xl capitalize  hover:bg-main-gray">work</a>
+                <a href="#contact" class=" p-6  text-xl capitalize  hover:bg-main-gray">contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id='welcome-section' class="bg-gray-700 h-screen flex justify-center items-center">
+        <div class="">
+            <h1 class="text-2xl md:text-5xl text-center font-bold text-white">Hey I am Pinto </h1>
+            <p class="text-center text-main-red italic text-xl md:text-2xl mt-4 tracking-widest ">a web developer</p>
+        </div>
+    </section>
+    <section id='projects' class="bg-slate-400">
+        <div class="container mx-auto py-12">
+            <!-- title  -->
+            <div class="mx-auto w-1/2 ">
+                <h2 class="text-center mx-auto text-2xl md:text-4xl font-bold text-gray-100 border-b-2 pb-2">These are
+                    some
+                    of my
+                    projects</h2>
+                <!-- <div class="h-1 w-full bg-white mt-4 hover:bg-gray-700 hover:transition delay-700"></div> -->
+            </div>
+            <!-- projects container  -->
+            <div
+                class=" max-w-7xl mx-auto px-10 my-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:px-0 border  ">
+                <!-- single product  -->
+                <div class=" w-full  bg-gray-700 rounded-lg">
+                    <a href="">
+                        <img class="rounded-lg h-[85%] w-full "
+                            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                        <p class="text-center text-gray-100 text-lg md:text-xl font-semibold capitalize py-4">
+                            <span class="code">
+                                < </span>
+                                    tribute page
+                                    <span class="code">/></span>
+                        </p>
+                    </a>
+                </div>
+                <!-- single product  -->
+                <div class=" w-full  h-full bg-gray-700 rounded-lg">
+                    <a href="">
+                        <img class="rounded-lg h-[85%] w-full"
+                            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                            alt="">
+                        <p class="text-center text-gray-100 text-lg md:text-xl font-semibold capitalize py-4">
+                            <span class="code">
+                                < </span>
+                                    random quote machine
+                                    <span>/></span>
+                        </p>
+                    </a>
+                </div>
+                <!-- single product  -->
+                <div class=" w-full  bg-gray-700 rounded-lg">
+                    <a href="">
+                        <img class="rounded-lg h-[85%] w-full"
+                            src="	https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="">
+                        <p class="text-center text-gray-100 text-lg md:text-xl font-semibold capitalize py-4">
+                            <span class="code">
+                                < </span>
+                                    javaScript calculator
+                                    <span>/></span>
+                        </p>
+                    </a>
+                </div>
+                <!-- single product  -->
+                <div class=" w-full  bg-gray-700 rounded-lg">
+                    <a href="">
+                        <img class="rounded-lg h-[85%] w-full"
+                            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
+                        <p class="text-center text-gray-100 text-lg md:text-xl font-semibold capitalize py-4">
+                            <span>
+                                < </span>
+                                    tribute page <span>/></span>
+                        </p>
+                    </a>
+                </div>
+                <!-- single product  -->
+                <div class=" w-full  bg-gray-700 rounded-lg">
+                    <a href="">
+                        <img class="rounded-lg h-[85%] w-full"
+                            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="">
+                        <p class="text-center text-gray-100 text-lg md:text-xl font-semibold capitalize py-4"><span>
+                                < </span>tic tac toe game <span>/></span></p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- see all projects button  -->
+            <div class="flex justify-center">
+                <a href="" class=" px-8 py-3 bg-main-red text-white border-2 border-main-red rounded-lg text-xl font-semibold
+                hover:text-main-red hover:bg-white">see
+                    all </a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="contact" class="bg-slate-700 h-[90vh] flex justify-center items-center ">
+        <div class=" mx-8 md:mx-0">
+            <h1 class=" text-center text-white font-bold text-2xl md:text-6xl">Let's work together...</h1>
+            <p class=" text-center text-white text-xl  md:text-2xl tracking-wide mt-4 italic">how do you take your
+                coffee?</p>
+            <!-- links  -->
+            <div class="w-full  flex justify-center space-x-4 flex-wrap md:space-x-10 mt-10 ">
+                <a href=""
+                    class="inline-block text-white text:lg md:text-2xl capitalize tranition duration-700 hover:translate-y-2"><i
+                        class=" fa-brands fa-facebook mr-2"></i>facebook</a>
+
+                <a href=""
+                    class="inline-block text-white text:lg md:text-2xl capitalize tranition duration-700 hover:translate-y-2"><i
+                        class="fa-brands fa-github mr-2"></i>github</a>
+
+
+
+                <a href=""
+                    class="inline-block text-white text:lg md:text-2xl capitalize tranition duration-700 hover:translate-y-2"><i
+                        class="fa-brands fa-x-twitter mr-2"></i>twitter</a>
+
+                <a href=""
+                    class="inline-block text-white text:lg md:text-2xl capitalize tranition duration-700 hover:translate-y-2"><i
+                        class="fa-solid fa-at mr-2"></i>send a mail</a>
+                <a href=""
+                    class="inline-block text-white text:lg md:text-2xl capitalize tranition duration-700 hover:translate-y-2"><i
+                        class="fa-solid fa-mobile-screen mr-2"></i>call me </a>
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="bg-slate-700">
+        <div class="w-full h-1 bg-main-red"></div>
+        <p class="py-4 text-2xl text-center text-white capitalize">all right reserved <span>@pinto</span></p>
+    </footer>
+</body>
+
+
+
+</html>
